@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering Page</title>
+    <link rel="stylesheet" href="./order.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerleft">
+        <a name="Top"></a>
+        <h1><span class="whitetext"> Gary Blue's Diner</span></h1>
+      </div>
+
+      <div class="headerright">
+        <br />
+        <br />
+
+        <a href="index.html">Home</a> &nbsp;&nbsp;
+        <a href="menu.html">Our Menu</a> &nbsp;&nbsp;
+        <a href="order.html">Order Online</a>
+      </div>
+    </header>
+    <div class="mainboxmenu" id="centertext">
+      <section>
+        <h1>
+          <br />
+          <span class="centertext"> Order Your Food </span>
+        </h1>
+        <hr />
+      </section>
+      <br />
+      <div class="orderbox">
+        <form id="orderForm">
+          <div class="food-item">
+            <input type="checkbox" id="biggary" name="biggary" />
+            <label for="biggary">Big Gary ($11.00)</label>
+            <input
+              type="number"
+              id="biggaryQuantity"
+              name="biggaryQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="frenchtoast" name="frenchtoast" />
+            <label for="frenchtoast">French Toast ($8.00)</label>
+            <input
+              type="number"
+              id="frenchtoastQuantity"
+              name="frenchtoastQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="waffles" name="waffles" />
+            <label for="waffles">Waffles ($7.00)</label>
+            <input
+              type="number"
+              id="wafflesQuantity"
+              name="wafflesQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="eggsbacon" name="eggsbacon" />
+            <label for="eggsbacon">Eggs & Bacon ($8.00)</label>
+            <input
+              type="number"
+              id="eggsbaconQuantity"
+              name="eggsbaconQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="oatmeal" name="oatmeal" />
+            <label for="oatmeal">Oatmeal ($5.00)</label>
+            <input
+              type="number"
+              id="oatmealQuantity"
+              name="oatmealQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="toutuns" name="toutuns" />
+            <label for="toutuns">Tout Uns ($4.00)</label>
+            <input
+              type="number"
+              id="toutunsQuantity"
+              name="toutunsQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="taters" name="taters" />
+            <label for="taters">Taters ($4.00)</label>
+            <input
+              type="number"
+              id="tatersQuantity"
+              name="tatersQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="bagel" name="bagel" />
+            <label for="bagel">Bagel ($5.00)</label>
+            <input
+              type="number"
+              id="bagelQuantity"
+              name="bagelQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div class="food-item">
+            <input type="checkbox" id="soup" name="soup" />
+            <label for="soup">Soup ($5.00)</label>
+            <input
+              type="number"
+              id="soupQuantity"
+              name="soupQuantity"
+              min="1"
+              placeholder="Quantity"
+            />
+          </div>
+          <div>
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" required />
+          </div>
+          <div class="total-section">
+            <input type="checkbox" id="tip" name="tip" />
+            <label for="tip">Add 10% Tip</label>
+          </div>
+          <button type="button" onclick="submitOrder()">Submit Order</button>
+        </form>
+      </div>
+
+      <h2>Your Order</h2>
+      <div id="orderSummary"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <div class="footer">
+        <hr/>
+        <a href = "#Top">Top of page</a>
+    </div>
+  </body>
+</html>
